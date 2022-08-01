@@ -1,0 +1,9 @@
+ancho = input ("Ingrese el ancho del rectangulo:")
+largo = input ("Ingrese el alto del rectangulo:")
+
+ancho = int (ancho)
+largo = int (largo)
+
+resultado = (ancho ** largo)
+
+print ("El area del rectangulo es" , resultado)
