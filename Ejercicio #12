@@ -1,0 +1,9 @@
+def main():
+    print("A continuación escribir las palabras a contar separadas por espacios:")
+    texto=str(input())
+    resultado=len(texto.split())
+    if(resultado==1):
+        print("El texto tiene", resultado ,"palabra.")
+    else:
+        print("El texto tiene", resultado ,"palabras.")
+main()
