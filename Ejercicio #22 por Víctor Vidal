@@ -1,0 +1,13 @@
+def main():
+    multa=0
+    dias=0
+    dias=int(input("Número de días desde el alquiler del libro: "))
+    if (dias<5):
+        multa=print("No hay multa.")
+    elif (dias>=5 and dias<10):
+        multa=print("La multa es de:",dias*50)
+    elif (dias>=10 and dias<30):
+        multa=print("La multa es de:",dias*100)
+    elif (dias>=30):
+        multa=print("Se ha cancelado la membresía, y la multa es de:",dias*150)      
+main()
