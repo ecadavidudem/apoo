@@ -1,0 +1,16 @@
+# calcular area y perimetro cuadrado 
+
+# area
+
+lado1 = int (input ("Ingrese medida del lado 1 del cuadrado:  "))
+lado2 = int (input ("Ingrese medida del lado 2 del cuadrado:  "))
+area = lado1 * lado2
+print ("El area del cuadrado es: ", area)
+
+#perimetro
+lado1 = int (input ("Ingrese medida del lado 1 del cuadrado:  "))
+lado2 = int (input ("Ingrese medida del lado 2 del cuadrado:  "))
+lado3 = int (input ("Ingrese medida del lado 3 del cuadrado:  "))
+lado4 = int (input ("Ingrese medida del lado 4 del cuadrado:  "))
+perimetro = lado1 + lado2 + lado3 + lado4
+print ("El perimetro del cuadrado es:  ",perimetro)
