@@ -1,0 +1,14 @@
+class CuentaBancaria:
+
+    manejo = 0.002
+    
+    def __init__(self, name, cantidad):
+        self.name = name
+        self.cantidad = cantidad
+        
+
+persona1 = CuentaBancaria("Roberto", 40000)
+print(f'El saldo de {persona1.name} es {persona1.cantidad}$ y paga una cuota mensual de manejo por su saldo de {CuentaBancaria.manejo*persona1.cantidad}$')
+
+persona2 = CuentaBancaria("Sebastian", 10000000)
+print(f'El saldo de {persona2.name} es {persona2.cantidad}$ y paga una cuota mensual de manejo por su saldo de {CuentaBancaria.manejo*persona2.cantidad}$')
