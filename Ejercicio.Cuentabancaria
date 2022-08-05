@@ -1,0 +1,5 @@
+class Cuenta_bancaria:
+    def __init__(self, numerodecuenta:int, propetario:str, balance:int):
+        self.numerodecuenta = numerodecuenta
+        self.propetario = propetario
+        self.balance = balance
