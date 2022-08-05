@@ -3,10 +3,13 @@ class CuentaBancaria:
     def __init__(self, cantidad):
         self.cantidad = cantidad
     
-    def aplicar_cuota_manejo(self):
+    def agregar(self):
         return self.cantidad * 0.002
-        
+
+    def imprimir(self):
+        print (self.cantidad)
+
 Persona1 = CuentaBancaria(150000)
 
-estado = Persona1.aplicar_cuota_manejo()
-print(estado)
+estado = Persona1.agregar()
+print(f"Su cuota de manejo es: {estado}$")
