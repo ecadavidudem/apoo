@@ -1,14 +1,16 @@
 class CuentaBancaria:
 
-    manejo = 0.002
-    
-    def __init__(self, name, cantidad):
-        self.name = name
+    def __init__(self, cantidad):
         self.cantidad = cantidad
-        
+    
+    def agregar(self):
+        return self.cantidad * 0.002
 
-persona1 = CuentaBancaria("Roberto", 40000)
-print(f'El saldo de {persona1.name} es {persona1.cantidad}$ y paga una cuota mensual de manejo por su saldo de {CuentaBancaria.manejo*persona1.cantidad}$')
+    def imprimir(self):
+        print (self.cantidad)
 
-persona2 = CuentaBancaria("Sebastian", 10000000)
-print(f'El saldo de {persona2.name} es {persona2.cantidad}$ y paga una cuota mensual de manejo por su saldo de {CuentaBancaria.manejo*persona2.cantidad}$')
+Persona1 = CuentaBancaria(150000)
+
+estado = Persona1.agregar()
+print(f"Su cuota de manejo es: {estado}$")
+
