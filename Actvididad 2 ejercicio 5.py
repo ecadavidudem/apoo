@@ -1,32 +1,26 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Aug  4 21:16:46 2022
-
-@author: sebas
-"""
-
 class Circulo:
-    print("Ingrese el radio del circulo:\n")
-    r=float(input())
-    pi=3.1416
-    a=pi*(r*r)
-    p=2*r*pi
-    
-    def __init__(self,radio,area):
-                self.radio = radio
-                self.area = area
-                
-                def find_perimetro(self):
-                    return self.perimetro 
-                
-                def find_area(self):
-                    return self.area 
-                
-my_circulo = Circulo()
 
-perimetro = my_circulo.find_perimetro()
+    def __init__(self,radio):
+        self.radio = radio
+
+    def calcular(self):
+        PI = 3.1416
+        self.area=PI*(radio*radio)
+        self.perimetro=2*radio*PI
+                
+    def get_perimetro(self):
+        return self.perimetro 
+                
+    def get_area(self):
+        return self.area 
+
+print("Ingrese el radio del circulo:\n")
+radio=float(input())
+
+
+my_circulo = Circulo(radio)
+my_circulo.calcular()
+perimetro = my_circulo.get_perimetro()
 print(perimetro)
-area = my_circulo.find_area()
+area = my_circulo.get_area()
 print(area)
-    
- 
