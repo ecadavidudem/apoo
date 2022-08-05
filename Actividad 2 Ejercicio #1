@@ -1,0 +1,8 @@
+class Vehiculo:
+  def __init__(self, velocidad_maxima, kilometraje):
+    self.velocidad_maxima=velocidad_maxima
+    self.kilometraje=kilometraje
+
+my_vehiculo=Vehiculo(100,1500)
+print(my_vehiculo.velocidad_maxima)
+print(my_vehiculo.kilometraje)
