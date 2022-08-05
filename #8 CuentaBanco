@@ -1,0 +1,10 @@
+#Para la clase CuentaBancaria, cree un método depositar que maneje las acciones de depósito en la cuenta.
+class Cuenta_bancaria:
+
+    def __init__(self, numero_cuenta, propietarios, balance)
+        self.numerodecuenta = numerodecuenta
+        self.propetario = propetario
+        self.balance = balance
+
+    def depositar (self, valor)
+        self.balance+= valor 
