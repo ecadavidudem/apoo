@@ -4,7 +4,7 @@ def fib(n):
     else:
         return fib(n-1) + fib(n-2)
         
-m=int(input('Escribir la extensión de la serie de Fibonacci'))
+m=int(input("Escribir la extensión de la serie de Fibonacci:"))
 
 for x in range(m):
     print(fib(x))
