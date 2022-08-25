@@ -1,0 +1,3 @@
+x=float(input("Inserte primer número real a multiplicar:"))
+y=float(input("Inserte segundo número real a multiplicar:"))
+print("La multiplicación es:", x*y)
