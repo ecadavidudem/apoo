@@ -1,0 +1,30 @@
+class Rectangulo:
+    def __init__(self, X1,Y1,X2,Y2):
+        self.X1=X1
+        self.Y1=Y1
+        self.X2=X2
+        self.Y2=Y2
+
+My_Esquinas=Rectangulo(2,7,4,9)
+print("Ubicación de la primera esquina en el eje X:")
+print(My_Esquinas.X1)
+print("Ubicación de la primera esquina en el eje Y:")
+print(My_Esquinas.Y1)
+print("Ubicación de la segunda esquina en el eje X:")
+print(My_Esquinas.X2)
+print("Ubicación de la segunda esquina en el eje Y:")
+print(My_Esquinas.Y2)
+
+LadoUno=X2-X1
+if LadoUno<0:
+    LadoUno=LadoUno*(-1)
+LadoDos=Y2-Y1
+if LadoDos<0:
+    LadoDos=LadoDos*(-1)
+
+Perimetro=2*LadoUno+2*LadoDos
+AreaRectangulo=LadoUno*LadoDos
+if LadoUno==LadoDos:
+    print("El rectangulo es un cuadrado")
+else: 
+    print("El rectangulo no es un cuadrado")
