@@ -1,0 +1,29 @@
+class Cuenta:
+
+    def init(self,cuenta,propietario,saldo):
+        self.cuenta=cuenta
+        self.propietario=propietario
+        self.saldo_saldo=saldo
+
+
+    def setRetirar(self,s):
+        if(self.saldo-s>0):
+            self.saldo=self.saldo-s
+
+
+    def getCuenta(self):
+        return self.cuenta
+    def getPropietario(self):
+        return self.propietario
+    def getSaldo(self):
+        return self.saldo
+
+    def mostrarCuenta(self):
+        print("\nCuenta "+self.getCuenta()+"\nPropietario: "+self.getPropietario()+
+            str(self.getSaldo()))
+
+cuenta=input("Favor ingresar numero de cuenta: ")
+propietario=input("Favor ingresar propietario: ")
+saldo=input("Favor ingresar saldo inicial: ")
+e=Cuenta(cuenta,propietario,saldo)
+e.mostrarCuenta() 
