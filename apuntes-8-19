@@ -1,0 +1,5 @@
+s=[x**2 for x in range (10)]
+print(s)
+
+i=[x for x in s if (x%3==0)]
+print(i)
